@@ -1,8 +1,10 @@
 /* Add layout here */
+/* Layout 1: */
+
+/* 
 body{
     display: grid;
-    /* grid-template-rows: auto auto  auto; */
-
+    /* grid-template-rows: auto auto  auto;
 }
 
 main{
@@ -27,4 +29,35 @@ main{
 
 .links ul > li {
     display: inline-block;
+} 
+*/
+
+/* Layout 3: */
+body{
+    display: grid;
+
+    grid-template-areas: 
+        "header header header header"
+        "footer footer footer footer"
+        "navigation main main links" ;
+}
+
+header {
+    grid-area: header;
+    justify-self: center;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.navigation {
+    grid-area: navigation;
+}
+main {
+    grid-area: main;
+}
+
+.links {
+    grid-area: links;
 }
