@@ -1,6 +1,5 @@
 /* Add layout here */
 /* Layout 1: */
-
 /* 
 body{
     display: grid;
@@ -32,7 +31,44 @@ main{
 } 
 */
 
+/* Layout 2: */
+body{
+    display: grid;
+    grid-template-areas:
+    "header header ."
+    "main main navigation"
+    "main main links"
+    "footer footer ."
+}
+
+header {
+    grid-area: header;
+    justify-self: center;
+}
+
+main {
+    grid-area: main;
+}
+
+.navigation {
+    grid-area: navigation;
+}
+
+.links{
+    grid-area: links;
+    justify-content: center;
+    align-items: end;
+}
+
+footer {
+    grid-area: footer;
+    justify-self: center;
+    align-self: end;
+}
+
+
 /* Layout 3: */
+/*
 body{
     display: grid;
 
@@ -61,3 +97,4 @@ main {
 .links {
     grid-area: links;
 }
+*/
