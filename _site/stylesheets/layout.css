@@ -1,1 +1,30 @@
 /* Add layout here */
+body{
+    display: grid;
+    /* grid-template-rows: auto auto  auto; */
+
+}
+
+main{
+    display: grid;    
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.navigation{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+.links{
+    grid-column: 1 / 6;
+    justify-self: center;
+
+}
+
+.links ul {
+    display: inline;
+}
+
+.links ul > li {
+    display: inline-block;
+}
